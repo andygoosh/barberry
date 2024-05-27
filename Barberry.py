@@ -33,7 +33,7 @@ def start(message):
         "So, what can I assist you with today in the realm of BARBERRY'N'BLADES?"
     ]
 
-    logo = open('/Users/andrey.nikulin/Downloads/barberry.png','rb')
+    logo = open('barberry.png','rb')
     bot.send_photo(message.chat.id, logo, caption=msgs[0])
     [bot.send_message(message.chat.id, mess) for mess in msgs[1:]]
     logo.close()
