@@ -8,7 +8,8 @@ import dateparser
 from datetime import timedelta, datetime
 
 from dotenv import load_dotenv
-_ = load_dotenv('/Users/andrey.nikulin/Development/Personal/.env')
+load_dotenv()
+
 openai.api_key = os.environ['GPT-3']
 SYSTEM_MESSAGE = "You are a friendly and helpful assistant at BARBERRY'N'BLADES barber shop."
 
